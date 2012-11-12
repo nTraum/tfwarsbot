@@ -1,0 +1,9 @@
+server:   irc.quakenet.org
+port:     6667
+channel:  #tf.wars
+nickname: TfWarsBot
+verbose:  False
+messages:
+  - foo
+  - bar
+  - zoo
