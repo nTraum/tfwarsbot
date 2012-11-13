@@ -37,9 +37,11 @@ def start_bot(cfg)
         t = Time.now
         sleep_begin = Time.local(t.year, t.month, t.day, cfg.sleep_hour_begin)
         sleep_end = Time.local(t.year, t.month, t.day, cfg.sleep_hour_end) 
-
-        Channel(cfg.channel).send(Format(:bold, 'Tip: ') + Format(:reset, :yellow, cfg.messages.sample)) unless t.between?(sleep_begin, sleep_end)
-        debug 'Skipping message, sleeping time...' if t.between?(sleep_begin, sleep_end)
+        if t.between?(sleep_begin, sleep_end)
+          debug 'Skipping message, sleeping time...' 
+        else
+          Channel(cfg.channel).send(Format(:bold, 'Tip: ') + Format(:reset, :yellow, cfg.messages.sample))
+        end
       end
     end
   end
