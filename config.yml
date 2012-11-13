@@ -3,7 +3,7 @@ port:     6667
 channel:  "#tf.wars"
 nickname: "TfWarsBot"
 verbose:  "False"
-interval: 5
+interval: 1200
 sleep_hour_begin: 0
 sleep_hour_end: 12
 messages:
