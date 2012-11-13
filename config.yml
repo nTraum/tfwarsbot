@@ -1,9 +1,22 @@
-server:   irc.quakenet.org
+server:   "irc.quakenet.org"
 port:     6667
-channel:  #tf.wars
-nickname: TfWarsBot
-verbose:  False
+channel:  "#tf.wars"
+nickname: "TfWarsBot"
+verbose:  "False"
+interval: 5
+sleep_hour_begin: 0
+sleep_hour_end: 12
 messages:
-  - foo
-  - bar
-  - zoo
+  - "Only look for opponents when your whole team is ready to play right now. If all people follow this simple rule, no one will have to wait unnecessary amounts of time."
+  - "Only look for opponents when your whole team is ready to play right now. If all people follow this simple rule, no one will have to wait unnecessary amounts of time."
+  - "Only reply to requests when all of your mates are ready to play right now. If all people follow this simple rule, no one will have to wait unnecessary amounts of time."
+  - "Only reply to requests when all of your mates are ready to play right now. If all people follow this simple rule, no one will have to wait unnecessary amounts of time."
+  - "When looking for opponents, make sure you're able to join a gameserver and ready up within the next 5 minutes."
+  - "When looking for opponents, make sure you're able to join a gameserver and ready up within the next 5 minutes."
+  - "You can include 'on'/'off' into your request to indicate whether you have a gameserver available."
+  - "Include '6v6'/9v9' into your request to inform potential opponents what game mode you want to play."
+  - "Don't want to play against mixes? - Include 'teams only' into your request."
+  - "As a rule of thumb: 'High' is Prem or Div 1, 'Mid': Div 2-4, 'Low': Div 5-6."
+  - "Head over to #pixeltf2.pickup if you cannot find 5 other mates to play with. Play a pickup instead."
+  - "Tell opponents if you want to play specific maps right away, so you don't have argue about it in-game later."
+  - "If you haven't played competitive TF2 before, stick with 'low-' requests to find other newbies to play against."
