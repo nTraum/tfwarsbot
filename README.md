@@ -5,7 +5,7 @@ A Simple IRC bot saying things every once in a while.
 
 Clone the git repository:
 
-    $ git://github.com/nTraum/tfwarsbot.git
+    $ git clone git://github.com/nTraum/tfwarsbot.git
 
 Install necessary gems:
 
